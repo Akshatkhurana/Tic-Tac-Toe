@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    height: 100px;
+    background-color:rgb(50, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    color: white;
+    font-size: 50px;
+    font-family: "Protest Revolution", sans-serif;
+}
+.gameContainer{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(206, 161, 249);
+    cursor: pointer;
+}
+.info{
+    font-size: 25px;
+}
+.gameinfo{
+    padding: 0px 34px;
+    font-family: "Lato", sans-serif;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-top: 20px;
+}
+.br-0{
+    border-right: 0px;
+}
+.bl-0{
+    border-left: 0px;
+}
+.bt-0{
+    border-top: 0px;
+}
+.bb-0{
+    border-bottom: 0px;
+}
+#reset{
+    padding: 4px 24px;
+    margin-top: 20px;
+    background-color: #856cf7;
+    margin-left: 30px;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+#reset:hover{
+    transform: scale(1.2);
+    background-color: rgb(108, 151, 243);
+}
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 40px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
